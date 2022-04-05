@@ -1,12 +1,8 @@
 html
 {
   // ../public/img/Page-Connexion.png
-  background-image: url(img/Page-Accueil.png);
-}
-
-main 
-{
-  height: 110vh;
+  background-image: url(img/fond/Page-Accueil.png);
+  background-size: cover;
 }
 
 .SquidSearch
@@ -14,7 +10,14 @@ main
   font-style: Hero New;
   color: #417ae9;
   text-align: center;
-  margin: 9vh;
+  margin: 15vh;
+}
+
+.logo
+{
+  margin-top: 12vh;
+  height: 56px;
+  width: 54.85px;
 }
 
 .Centrer
@@ -25,13 +28,55 @@ main
   justify-content: center;
 }
 
-main > section > svg
+// ------ Recherche ------ //
+
+.CentrerSearch
 {
-  margin-top: 12vh;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .Recherche-Texte
 {
   font-family: "SF Pro Display";
   font-size: 20px;
   margin-top: 3vh;
+}
+
+.Barre-de-recherche
+{
+  border-radius: 35px 0px 0px 35px;
+  border: 1px solid;
+  border-right: 0px solid;
+  border-color: #707070;
+  width: 246px;
+  height: 52px;
+}
+
+.Bouton-de-recherche
+{
+  border-radius: 0px 0px 35px 0px;
+  border: 1px solid;
+  border-left: 0px solid;
+  border-color: #707070;
+  background-color: #417AE9;
+  width: 72px;
+  height: 52px;
+}
+
+// ------ Catégorie ------ //
+
+.Langues
+{
+  height: 26px;
+  width: 125px;
+  margin: 0px 10px;
+  border-radius: 51px;
+  border: 0px;
+  background-color: #A3A2A0;
+  font-family: "SF Pro Display";
+  font-size: 15px;
+  color: #ffffff;
 }

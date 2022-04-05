@@ -19,7 +19,7 @@ function App ()
               </g>
           </svg>
           <p class="Recherche-Texte">Votre lexique du designer.</p>
-          <input type="text" />
+          <input type="text" class="test"/>
       </section>
     </main>
     </>

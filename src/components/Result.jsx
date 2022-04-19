@@ -5,7 +5,7 @@ export const Result = () =>
     const { state } = useLocation()
     return (
         <>
-        <p>Définition : {state.definition}</p>
+        <p>Définition : {state.definitionID}</p>
         </>
     )
 }

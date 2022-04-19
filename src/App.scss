@@ -5,23 +5,31 @@ html
   background-size: cover;
 }
 
-// @font-face {
-//   font-family: "Hero new";
-//   src: url("Hero_New/Hero_New_Regular.otf") format("otf");
+@font-face 
+{
+  font-family: "Hero New";
+  src: url("./Hero_New/2MASS J1808-Normal (personal use).otf") format("opentype");
+}
 
+@font-face 
+{
+  font-family: "SF_Pro_Display";
+  src: url("./sf-pro-display/SF-Pro-Display-Regular.otf") format("opentype");
+}
 // Logo
  
 .SquidSearch
 {
-  font-style: Hero New;
+  font-family: "Hero New";
   color: #417ae9;
   text-align: center;
-  margin: 15vh;
+  margin: 10vh;
+  font-size: 11px;
 }
 
 .logo
 {
-  margin-top: 12vh;
+  margin-top: 8vh;
   height: 56px;
   width: 54.85px;
 }
@@ -59,7 +67,7 @@ html
 
 .Recherche-Texte
 {
-  font-family: "SF Pro Display";
+  font-family: "SF_Pro_Display";
   font-size: 20px;
   margin-top: 3vh;
 }
@@ -102,7 +110,7 @@ html
   border-radius: 51px;
   border: 0px;
   background-color: #A3A2A0;
-  font-family: "SF Pro Display";
+  font-family: "SF_Pro_Display";
   font-size: 15px;
   color: #ffffff;
 }
@@ -136,4 +144,30 @@ html
 .orange
 {
   background-color : #ee8450;
+}
+
+// ------ Définition ------ //
+
+.definition
+{
+  padding: 20px 50px;
+  margin: 20px;
+  border-radius: 0px 26px 26px 26px;
+  border: 0px solid;
+  border-left: 0px solid;
+  margin-bottom: 13px;
+}
+
+.slid
+{
+    height: fit-content;
+    overflow-y: scroll;
+    
+}
+.slid::-webkit-scrollbar{
+  display: none;
+}
+
+.test{
+  height: 100px;
 }

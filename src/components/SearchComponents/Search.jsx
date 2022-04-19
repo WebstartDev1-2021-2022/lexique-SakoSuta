@@ -1,10 +1,22 @@
 import logSquid from '../../img/icon/Squid-logo.svg';
-import '../../reset.css';
 import { SearchInput } from './SearchInput';
 import { Categorie } from "../../components/Categorie"
+import { SearchPropositions } from './SearchPropositions';
+import { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 
 export const Home = () =>
 {
+  const [propositions, setPropositions] = useState([])
+
+  const navigate = useNavigate()
+
+  const goToResult = (definitionID) => {
+    navigate('/result', { state: {
+      definitionID
+    }})
+  }
+
   return (
     <>
     <header>
@@ -14,13 +26,12 @@ export const Home = () =>
       <section className="Centrer colone">
         <img src={ logSquid } alt="Squid-logo" className="logo"/>
         <p className="Recherche-Texte bold">Votre lexique du designer.</p>
-        <SearchInput />
+        <SearchInput setPropositions={setPropositions} />
+        <div className="test">
+            <SearchPropositions propositions={propositions} goToResult={goToResult}/>
+        </div>
       </section>
-      <section className="CentrerSearch">
-        <button className="Langues bold">Français</button>
-        <button className="Langues bold">Anglais</button>
-      </section>
-      <Categorie ClassNameS="Centrer" />
+      {/* <Categorie ClassNameS="Centrer" ClassNameD="Centrer colone cat"/> */}
     </main>
     </>
         );

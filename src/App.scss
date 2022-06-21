@@ -100,19 +100,25 @@ html
   padding: 10px;
 }
 
+.Langues:hover
+{
+  background-color: #707070;
+  color: #F9F7F4;
+}
+
 .Langues
 {
   height: 26px;
-  width: px;
+  width: 103px;
   margin: 0px 10px;
   margin-bottom: 80px;
   padding: 0px 20px;
   border-radius: 51px;
   border: 0px;
-  background-color: #A3A2A0;
   font-family: "SF_Pro_Display";
   font-size: 15px;
-  color: #ffffff;
+  background-color: #F9F7F4;
+  color: #707070;
 }
 
 .Categorie
